@@ -4,18 +4,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 洪卫的博客
-subtitle: 洪卫的博客
-description: 电子科技大学 | 电子与通信工程 | 计算机视觉
-keywords: UESTC CV DeepLearning MachineLearning 洪卫 sunhw Hongwei 计算机视觉 深度学习
-author: 洪卫
+title: 你的站点名
+subtitle: 你的博客副标题
+description: 简介
+keywords: 
+author: 作者
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-# url: https://shw2018.github.io/
-url: https://sunhwee.com
+# url: https://你的URL/ # 替换为你的URL，例如：https://meringueclouds.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -114,24 +113,21 @@ theme: matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo:
-    github:  https://github.com/shw2018/shw2018.github.io.git
-    # coding: https://git.coding.net/hwsun/hwsun.git
-    # gitee: https://gitee.com/hwsun/hwsun.git
+  repo: https://github.com/注册的GitHub用户名/注册的GitHub用户名.github.io
   branch: master
 - type: baidu_url_submitter
 
 # baidu submit
 baidu_url_submit:
   count: 80                                      # 提交最新的一个链接
-  host: sunhwee.com     # 在百度站长平台中注册的域名
+  host: meringueclouds.github.io     # 在百度站长平台中注册的域名
   token: XXXXXXXXXXXXXXX    # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt                # 文本文档的地址， 新链接会保存在此文本文档里
 
 
 
 live2d:
-  enable: true
+  enable: false
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
@@ -173,6 +169,6 @@ githubEmojis:
 
 # lazyload configuration  2019.08.14
 lazyload:
-  enable: true 
+  enable: false 
   onlypost: true
   loadingImg: https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg    # eg ./images/loading.gif
