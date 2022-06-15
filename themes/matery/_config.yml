@@ -37,7 +37,7 @@ menu:
     icon: fa-user-circle-o
   Contact:
     url: /contact
-    icon: fa-envelope
+    icon: fa-commenting
   Friends:
     url: /friends
     icon: fa-address-book
@@ -56,15 +56,15 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: false
+  enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: 语句标题
+  text: 内容
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   showTitle: false
   title: 听听音乐
   fixed: false # 开启吸底模式
@@ -109,19 +109,19 @@ logo: /medias/logo.png
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
   enable: true
-  name: Github
-  icon: fa-github-alt
-  url: https://github.com/shw2018/
+  name: 按钮标题
+  icon: fa-paper-plane # 配置Font Awesome图标
+  url: https://meringueclouds.github.io
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  qq: 948840751
-  github: shw2018
-  weibo: 3010027571  # 微风穿云隙
-  email: 948840751@qq.com
-  zhihu: hongwei-60-34 # Hongwei
+  qq: 1440128969
+  github: meringueclouds
+  weibo: 
+  email: meringueclouds@outlook.com # 你的电子邮箱
+  zhihu: 
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -139,7 +139,7 @@ code:
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
-  enable: true
+  enable: false
   title: 你的赏识是我前进的动力!
   wechat: /medias/reward/wechat.bmp
   alipay: /medias/reward/alipay.bmp
@@ -180,9 +180,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatars/hwsun.jpg
-  career: 电子科技大学 | 电子与通信工程 | 计算机视觉
-  introduction: 我是电子科技大学信息与通信工程学院2018级硕士研究生。研究方向是计算机视觉，深度学习。我们实验室是智能视觉信息处理与通信实验室(IVIPC)，欢迎大家报考！
+  avatar: /medias/avatars/avatar.png
+  career: 职业
+  introduction: 简介
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -190,21 +190,11 @@ profile:
 myProjects:
   enable: true
   data:
-    DeepLearning-500-questions:
-      icon: fa-file-text-o
+    项目名称:
+      icon: fa-paper-plane
       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-      url: https://github.com/scutan90/DeepLearning-500-questions
-      desc: 深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。.
-    hexo-theme-matery:
-      icon: fa-meetup
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    hexo-blog-fly:
-      icon: fa-file-text-o
-      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-      url: https://github.com/shw2018/hexo-blog-fly
-      desc: 我的博客源码开源小项目
+      url: https://meringueclouds.github.io
+      desc: 项目简介
 
 
 # config my skills informations in about page.
@@ -213,25 +203,10 @@ myProjects:
 mySkills:
   enable: true
   data:
-    算法:
+    计算机语言:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 80%
-    C++:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 70%
-    Python:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 95%
-    Java:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 50%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 50%
-    HTML:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 70%
-
+    
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
@@ -257,13 +232,13 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  owner: shw2018
-  repo: shw2018.github.io
+  owner:  # 你的GitHub用户名
+  repo:  # 你的博客仓库名称
   oauth:
-    clientId: XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    clientSecret: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-  admin:
-    - shw2018
+    clientId: 查教程获取
+    clientSecret: 查教程获取
+  admin: 
+     - 你的GitHub用户名
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -291,21 +266,21 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
-  appId: XXXXXXXXXXXXXXXXXXXXXXXX
-  appKey: XXXXXXXXXXXXXXXXXXXXXX
-  notify: true
-  verify: true
-  visitor: true
+  enable: false
+  appId: 
+  appKey: 
+  notify: false
+  verify: false
+  visitor: false
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
+  placeholder: '也可以在这里评论呦~' # Comment Box placeholder
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/shw2018/shw2018.github.io
+  url: https://github.com/meringueclouds/hexo-blog-clouds
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -466,7 +441,7 @@ sakura:
 
 # 鼠标点击烟花爆炸动效
 fireworks:
-  enable: true
+  enable: false
 
 # 洪卫 shw2018 add 2019.09.10
 # 天气控件 Weather Widget
@@ -485,8 +460,8 @@ xuehuapiaoluo:
 
 # Tidio online contact 
 tidio:
-  enable: true
-  public_key: xxxxxxxxxxxxxxxxxxxxxxxxxxx
+  enable: false
+  public_key: 
 
 # 洪卫 shw2018 add 2019.09.15
 #背景canvas-nest
